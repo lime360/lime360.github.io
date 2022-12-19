@@ -5,3 +5,4 @@ here i archive old sites that i found in [wayback machine](https://web.archive.o
 - [The Film and Broadcast Page](proeser)
 - [Google](google)
 - [WebTV Daily Horoscope](webtv-horoscope)
+- [WebTV Logo](webtv)
