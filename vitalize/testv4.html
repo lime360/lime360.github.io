@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<body>
+		<center>
+			Vitalize! Test
+			<hr>
+			<script language="JavaScript">
+				function IncGlobalValue0()
+				{
+				   plgobj.setDoubleValue(0, plgobj.getDoubleValue(0) + 1.5);
+				}
+
+				function AppendGlobalString0()
+				{
+				   plgobj.setStringValue(0, plgobj.getStringValue(0) + "+++");
+				}
+
+				function Pause()
+				{
+				   plgobj.Pause();
+				}
+
+				function Resume()
+				{
+				   plgobj.Resume();
+				}
+
+				function Restart()
+				{
+				   plgobj.Restart();
+				}
+
+				function DisplayMessage(message)
+				{
+				   alert(message);
+				   return "Message has been displayed";
+				}
+			</script>
+			<object id="Vitalize1" width="50%" height="50%" type="application/x-cnc" classid="clsid:EB6D7E70-AAA9-40D9-BA05-F214089F2275" codebase="http://www.clickteam.com/vitalize4/vitalize.cab#Version=4,0,254,0">
+				<param name="URL" value="testv4.ccn">
+				<param name="ProgressBar" value="53,181,222,5">
+				<param name="ProgressBarColor" value="255,0,0">
+				<param name="ProgressBarBorderColor" value="255,255,0">
+				<param name="BackColor" value="0,255,0">
+				<embed type="application/x-cnc" src="https://lime360.serv00.net/download_centre/testv4.ccn" checkversion="4,0,254,0" pluginspage="http://www.clickteam.com/vitalize4/download.html" width="50%" height="50%">
+			</object>
+			<br>
+			<input type="button" name="IncGV0" value="Increment Global Value A" onclick="IncGlobalValue0()">
+			<input type="button" name="AppendGS0" value="Append Global String A" onclick="AppendGlobalString0()">
+			<input type="button" name="Pause" value="Pause" onclick="Pause()">
+			<input type="button" name="Resume" value="Resume" onclick="Resume()">
+			<input type="button" name="Restart" value="Restart" onclick="Restart()">
+			<script>
+				var uag = navigator.userAgent.toLowerCase();
+				var plgobj;
+				// Internet Explorer
+				if ( uag.indexOf('msie') != -1 && uag.indexOf('opera') == -1 )
+					plgobj = document.getElementById('Vitalize1');
+				// Netscape/Opera/FireFox
+				else
+					plgobj = document.embeds[0];
+			</script>
+		</center>
+	</body>
+</html>

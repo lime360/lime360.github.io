@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <title>Webring Generator</title>
+    <meta name="description" content="A collection of links to useful and unique places on the web.">
+    <meta name="robots" content="index, follow">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="submit" id="gen" value="generate"><br>
+    <textarea id="textArea"></textarea>
+    <script>
+        var numArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var letterArr = ["q", "x", "y", "z", "w", "v", "k", "h", "g", "p"];
+        var jsonVarArr = [];
+        var templateVarArr = [];
+        var constructorVarArr = [];
+        var tagVarArr = ["ring-"];
+        var jsonVar;
+        var templateVar;
+        var constructorVar;
+        var tagVar;
+
+        $(function() {
+            $("#gen").on("click", function() {
+                genUniqueVars();
+                console.log(jsonVar, templateVar, constructorVar, tagVar);
+                var webRing = `// this references the file that holds the webring data
+const ${jsonVar} = \`https://yourwebsite.neocities.org/webring.json\`;
+
+
+const ${templateVar} = document.createElement("template");
+
+// this is our webring styling
+${templateVar}.innerHTML = \`
+<style>
+.${jsonVar}-webring {
+  background-image:var(--${jsonVar}-background-image);
+  background-color:var(--${jsonVar}-background-color);
+  border:var(--${jsonVar}-border);
+  padding:var(--${jsonVar}-padding); 
+  max-width:var(--${jsonVar}-width);
+  height:var(--${jsonVar}-height);
+  border-radius:var(--${jsonVar}-border-radius);
+}
+.${jsonVar}-myUniqueClass .title {
+  font-family:var(--${jsonVar}-title-font);
+  font-size:var(--${jsonVar}-title-size);
+  line-height:var(--${jsonVar}-title-height);
+  letter-spacing:var(--${jsonVar}-title-spacing);
+  color:var(--${jsonVar}-title-color);
+  margin:var(--${jsonVar}-title-margin);
+  text-align:var(--${jsonVar}-title-align);
+  font-weight:var(--${jsonVar}-title-weight);
+  
+}
+.${jsonVar}-myUniqueClass {
+font-family:var(--${jsonVar}-text-family);
+font-size:var(--${jsonVar}-text-size);
+line-height:var(--${jsonVar}-text-height);
+color:var(--${jsonVar}-text-color);
+text-align:var(--${jsonVar}-text-align);
+  letter-spacing:var(--${jsonVar}-text-spacing);
+}
+.${jsonVar}-myUniqueClass a {
+color:var(--${jsonVar}-link-color);
+text-decoration:var(--${jsonVar}-link-decoration);
+font-size:var(--${jsonVar}-link-size);
+}
+.${jsonVar}-myUniqueClass p {
+margin:var(--${jsonVar}-text-margin);
+}
+.icon {
+  font-size: 100px;
+}
+</style>
+
+<div class="${jsonVar}-webring">
+  <div class="${jsonVar}-myUniqueClass">
+
+  </div>
+</div>\`;
+
+// not really sure about this stuff, but don't delete it!
+class ${constructorVar} extends HTMLElement {
+  connectedCallback() {
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(${templateVar}.content.cloneNode(true));
+
+    // e.g. https://css-tricks.com
+    const thisSite = this.getAttribute("site"); 
+    
+    fetch(${jsonVar})
+      .then((response) => response.json())
+      .then((sites) => {
+        // Finds the current site in the data
+        const matchedSiteIndex = sites.findIndex(
+          (site) => site.url === thisSite
+        );
+        
+        const matchedSite = sites[matchedSiteIndex];
+
+        let prevSiteIndex = matchedSiteIndex - 1;
+        if (prevSiteIndex === -1) prevSiteIndex = sites.length - 1;
+
+        let nextSiteIndex = matchedSiteIndex + 1;
+        if (nextSiteIndex > sites.length - 1) nextSiteIndex = 0;
+
+        const randomSiteIndex = this.getRandomInt(0, sites.length - 1);
+
+
+        // In this variable, put the HTML that you want your webring "badge" to use.
+        // keep the link 'href' values the same, but change the text!
+        const cp = \`
+          <div class="title">Webring Title</div>
+          <div class="extratext">
+          <p>
+            Here is some text!<br><br>
+            This site is: <strong><a href="\${matchedSite.url}"> \${matchedSite.name} </a></strong><br><br>
+            This site is owned by: \${matchedSite.name}
+          </p>
+          </div>
+          <p class="nav">
+            
+            <a href="\${sites[nextSiteIndex].url}">[Next]</a>
+            <a href="\${sites[prevSiteIndex].url}">[Previous]</a>
+            <a href="\${sites[randomSiteIndex].url}">[Random]</a>
+            <a href="https://yourwebsite.neocities.org/members.html">[Members]</a>
+          </p>
+        \`;
+
+        this.shadowRoot
+          .querySelector(".${jsonVar}-myUniqueClass")
+          .insertAdjacentHTML("afterbegin", cp);
+      });
+  }
+
+  // this calculates a random number
+  getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+}
+
+var rootVars = \`:root {
+  /* background! */
+  --${jsonVar}-background-image:url('https://sadgrl.online/images/bgs/tile/sparklebackground.gif');
+  --${jsonVar}-background-color:#000;
+  --${jsonVar}-border:5px solid aqua;
+  --${jsonVar}-border-radius:5px;
+    /* sizing */
+  --${jsonVar}-width:250px;
+  --${jsonVar}-height:250px;
+  --${jsonVar}-padding:1rem;
+  
+
+  /* title! */
+  --${jsonVar}-title-font:'Arial';
+  --${jsonVar}-title-color:aqua;
+  --${jsonVar}-title-size:35px;
+  --${jsonVar}-title-align:center;
+  --${jsonVar}-title-margin:10px;
+  /* line height & letter spacing */
+  --${jsonVar}-title-height:25px;
+  --${jsonVar}-title-spacing:3px;
+  --${jsonVar}-title-weight:bold;
+
+
+  /* text! */
+  --${jsonVar}-text-family:sans-serif;
+  --${jsonVar}-text-color:lightblue;
+  --${jsonVar}-text-size:14px;
+  --${jsonVar}-text-align:center;
+  --${jsonVar}-text-spacing:1px;
+  --${jsonVar}-text-height:1em;
+
+  /* links! */
+  --${jsonVar}-link-family:sans-serif;
+  --${jsonVar}-link-color:limegreen;
+  --${jsonVar}-link-decoration:none;
+  --${jsonVar}-link-weight:bold;
+  --${jsonVar}-link-size:13px;
+}\`
+
+window.onload = function() {
+var p = document.getElementsByTagName("body")[0];
+var style = document.createElement('style');
+var css = document.createTextNode(rootVars);
+style.appendChild(css);
+p.appendChild(style);
+
+}
+
+// whatever 'customElement' you define MUST be unique
+// do not use the name 'webring-css' or you will conflict with other webrings
+window.customElements.define("${tagVar}", ${constructorVar});`;
+                $("#textArea").val(webRing);
+            });
+        });
+
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function genUniqueVars() {
+            jsonVarArr = [];
+            templateVarArr = [];
+            constructorVarArr = [];
+            tagVarArr = ["ring-"];
+            for (let i = 0; i < 3; i++) {
+                jsonVarArr.push(letterArr[getRandomInt(0, 9)]);
+                jsonVarArr.push(getRandomInt(0, 9));
+                templateVarArr.push(letterArr[getRandomInt(0, 9)]);
+                templateVarArr.push(getRandomInt(0, 9));
+
+                constructorVarArr.push(letterArr[getRandomInt(0, 9)]);
+                constructorVarArr.push(getRandomInt(0, 9));
+
+                tagVarArr.push(getRandomInt(0, 9));
+            }
+            jsonVar = jsonVarArr.join("");
+            templateVar = templateVarArr.join("");
+            constructorVar = constructorVarArr.join("");
+            tagVar = tagVarArr.join("");
+        }
+    </script>
+    <style>
+        body,
+        html {
+            background-color: black;
+            height: 100%;
+        }
+    </style>
+</body>
+</html>

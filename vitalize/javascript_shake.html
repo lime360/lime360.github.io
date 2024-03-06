@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="assets/SpryEffects.js"></script>
+		<script type="text/javascript">
+			function Shake()
+			{
+			    vitApp.start()
+			}
+		</script>
+		<title>Clickteam</title>
+		<style type="text/css">
+			body {
+				background-color: #000000;
+			}
+			body,td,th {
+				color: #FFFFFF;
+			}
+			a:link {
+				color: #00FF00;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center" class="container" id="game" style="position: relative;">
+			<object id="Vitalize1" width="640" height="480" type="application/x-cnc" classid="clsid:EB6D7E70-AAA9-40D9-BA05-F214089F2275" codebase="http://www.clickteam.com/vitalize4/vitalize.cab#Version=4,0,247,6">
+				<param name="URL" value="breakout.ccn">
+				<param name="ProgressBar" value="53,181,222,5">
+				<param name="ProgressBarColor" value="255,0,0">
+				<param name="ProgressBarBorderColor" value="255,255,0">
+				<param name="BackColor" value="0,255,0">
+				<embed type="application/x-cnc" src="https://lime360.serv00.net/download_centre/breakout.ccn" checkversion="4,0,247,6" pluginspage="http://www.clickteam.com/vitalize4/download.html" width="640" height="480">
+			</object>
+		</div>
+		<script type="text/javascript">
+			var vitApp = new Spry.Effect.Shake('game');
+		</script>
+		<br>
+		<hr>
+		<br>
+		<p>Screen Shake using the Spry Javascript effect library.</p>
+		<p><strong>Step 1</strong> -- <a href="https://github.com/lime360/Spry">Download the Spry library from Adobe</a></p>
+		<p>&nbsp;</p>
+		<p><strong>Step 2</strong> -- Upload to your webserver "SpryEffects.js" -- There are many interesting and useful functions in the Spry framework but we are only concerned with making the screen shake at this time.</p>
+		<p>&nbsp;</p>
+		<p><strong>Step 3</strong> -- View the source for this page and note the 3 Javascript calls.</p>
+		<p>2 of them are in the section above the page &lt;head&gt;</p>
+		<p>&lt;script type="text/javascript" src="scripts/SpryEffects.js"&gt;&lt;/script&gt;</p>
+		<br>
+		<p>
+			&lt;script type="text/javascript"&gt;
+			<br>
+			function Shake()
+			<br>
+			{
+			<br>
+			vitApp.start()
+			<br>
+			}
+			<br>
+			&lt;/script&gt;
+		</p>
+		<p>One of them is in the &lt;body&gt; right after the embedding code for for the Vitalize file.</p>
+		<p>
+			&lt;script type="text/javascript"&gt;
+			<br>
+			var vitApp = new Spry.Effect.Shake('game');
+			<br>
+			&lt;/script&gt;
+		</p>
+		<p>&nbsp;</p>
+		<p><strong>Step 4</strong> -- One very important item to note is we used a &lt;div&gt; around our embed code and the container has an "id"</p>
+		<p>&lt;div align="center" class="container" id="game"&gt;</p>
+		<p>This allows the javascript to know what to shake.</p>
+		<p>&nbsp;</p>
+		<p><strong>Step 5</strong> -- Inside your Vitalize file you need to add a Vitalize plug in object</p>
+		<p>You can then use the action "Javascript - Call Function". The function we want to call is named "Shake"</p>
+		<p>Notice this is the same name as the 3rd Javascript function above.</p>
+		<p><a href="https://lime360.serv00.net/download_centre/breakout.zip">Download MFA source file for the game</a></p>
+		<p>Notes: Thanks to Andrew from Gwerdy for his help on using this with Vitalize.</p>
+		<p>&nbsp;</p>
+	</body>
+</html>
