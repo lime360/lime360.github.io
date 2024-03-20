@@ -16,4 +16,6 @@ Logos are found through YouTube.
 ## Logo list
 * [Warner Bros. Pictures](wb)
 * [New Line Cinema](nlc)
+* [Warner Bros. Television](wbtv)
 * [Warner Bros. Home Entertainment](warner-home-video)
+* [Closed Divisions](defunct)
