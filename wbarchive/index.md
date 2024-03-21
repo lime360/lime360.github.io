@@ -5,7 +5,7 @@ To Warner Bros. Discovery: this is made for archival pruposes so please don't su
 
 ## Information
 The archive mostly consists of opening and sometimes closing logos, and the film-specific variants.
-Fan-made versions are also included.
+Fanmade versions are also included.
 
 Each logo in each category is sorted chronologically by the film release year or the logo debut year.
 
