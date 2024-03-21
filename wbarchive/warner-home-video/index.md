@@ -8,3 +8,4 @@
 ## Warner Bros. Home Entertainment
 * [CGI Invisible/Visible Shield II](01007.mp4) (regular variant)
 * [Silver Invisible/Visible Shield](warner-home-video-2021.mp4) (fanmade)
+* [Silver Invisible/Visible Shield](warner-home-video-2021-alt.mp4) (fanmade, updated version)
