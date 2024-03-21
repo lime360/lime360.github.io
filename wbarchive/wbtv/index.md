@@ -6,6 +6,7 @@
 * [Television Silver Shield](wbtv-2021.mp4) (regular variant)
 * [Television Silver Shield](wbtv-2022.mp4) (regular variant, with Warner Bros. Discovery byline)
 * [Television Silver Shield](wbtv-2023-distributed-by.mp4) ("Distributed by" variant)
+* [Reimagined Television Shield](wbtv-2024-distributed-by.mp4) ("Distributed by" variant)
 * [Reimagined Television Shield](wbtv-2024-short.mp4) (short variant)
 
 ## Warner Horizon Television
