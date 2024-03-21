@@ -1,6 +1,7 @@
 # Warner Bros. Pictures
 * [Zooming shield](wb-1936-satan-met-a-lady.mp4) (from "Satan Met A Lady" (1936))
 * [The Classic Shield](wb-1962-the-music-man.mp4) (from "The Music Man" (1962))
+* [WB-7](wbsa-1968-petulia.mp4) (from "Petulia" (1968))
 * [WB-7](wbsa-1968-bullitt.mp4) (from "Bullit" (1968))
 * [WB-7](wbsa-1969-the-wild-bunch.mp4) (from "The Wild Bunch" (1969))
 * [The Kinney Shield](wb-1971-dirty-harry.mp4) (from "Dirty Harry" (1971))
