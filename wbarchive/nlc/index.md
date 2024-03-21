@@ -3,6 +3,7 @@
 * [The CGI Filmbox](nlc-1994.mp4) (regular variant)
 * [The CGI Filmbox](nlc-1994-the-mask.mp4) (from "The Mask" (1994))
 * [The CGI Filmbox](nlc.mp4) (regular variant, with AOL Time Warner byline)
+* [The CGI Filmbox](nlc-2005.mp4) (regular variant, with TimeWarner byline)
 
 ## Warner Bros. Pictures-New Line Cinema
 * [The WB/New Line Transition](wb-nlc-2020.mp4) (regular variant, with WarnerMedia byline)
