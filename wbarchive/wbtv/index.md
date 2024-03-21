@@ -1,4 +1,5 @@
 # Warner Bros. Television
+* [Television WCI Shield](wbtv-1972.mp4) (regular variant)
 * [Television WB Shield V](wbtv-2003-distributed-by.mp4) ("Distributed by" variant)
 * [Television WB Shield V](wbtv-bylineless.mp4) (bylineless variant)
 * [Television WB Shield VI](wbtv-2005.mp4) (regular variant)
