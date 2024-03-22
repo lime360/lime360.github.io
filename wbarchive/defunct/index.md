@@ -1,7 +1,12 @@
 # Closed Divisions
-* [Warner Independent Pictures "Abstract WI"](wip.mp4) (regular variant)
-* [Warner Max (Feburary 2020)](warnermax-2020.mp4) (regular variant)
-* [Warner Max "Cosmic Letters"](warnermax.mp4) (regular variant)
+
+## Warner Independent Pictures
+* [Abstract WI](wip.mp4) (regular variant)
+* [Abstract WI II](wip-2024.mp4) (fanmade)
+
+## Warner Max
+* [Prototype](warnermax-2020.mp4) (regular variant)
+* [Cosmic Letters](warnermax.mp4) (regular variant)
 
 ## New Line Home Video
 * [The CGI Filmbox](nlhv.mp4) (regular variant)
