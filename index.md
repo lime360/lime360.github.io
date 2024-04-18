@@ -19,6 +19,7 @@ I usually archive some old software or websites. Sometimes even other files like
 * [themetown.neocities.org](themetown)
 * [encartaxp.neocities.org](encartaxp)
 * [geocities.com/windowsworld05](windowsworld05)
+* [Facebook error page (ripped from Threads)](facebook-error-page)
 * [Vitalize download page](vitalize)
 * [Vitalize test page](vitalize/testv4.html)
 * [Vitalize + Adobe Spry shake effect example](vitalize/javascript_shake.html)
