@@ -5,7 +5,7 @@ I also have premission from [Seismo](https://www.youtube.com/@SeismosVideoCorner
 
 ![proof that i have premission](nickjrcrap/proof.png)
 
-Glitched technical difficulties screen is made by [Puz](https://puz.neocities.org).
+Glitched technical difficulties screen is made by ~~[Puz](https://puz.neocities.org)~~.
 
 ## Just a Nick Jr. logo, there is nothing wrong with it!
 ![why are they not moving](nickjrcrap/phase1.png)
@@ -38,6 +38,15 @@ Glitched technical difficulties screen is made by [Puz](https://puz.neocities.or
 ![nick jr](nickjrcrap/nickjrcom.png)
 
 ![rj kcin](nickjrcrap/bellsandballs.png)
+
+## Development images
+![old rj kcin](nickjrcrap/2_1.png)
+
+![development image 1](teaserschmeaser.png)
+
+![development image 2](Screenshot_2023-10-07_191716.png)
+
+![phase 4 image but on white bg](Screenshot_2023-10-07_220834.png)
 
 ### Make sure to check out [the full series](https://www.youtube.com/playlist?list=PLLETAMxb4wBIcBTFnpvy4bRMn361HQos_) too!
 
