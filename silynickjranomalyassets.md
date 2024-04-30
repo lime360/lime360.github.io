@@ -42,11 +42,11 @@ Glitched technical difficulties screen is made by ~~[Puz](https://puz.neocities.
 ## Development images
 ![old rj kcin](nickjrcrap/2_1.png)
 
-![development image 1](teaserschmeaser.png)
+![development image 1](nickjrcrap/teaserschmeaser.png)
 
-![development image 2](Screenshot_2023-10-07_191716.png)
+![development image 2](nickjrcrap/Screenshot_2023-10-07_191716.png)
 
-![phase 4 image but on white bg](Screenshot_2023-10-07_220834.png)
+![phase 4 image but on white bg](nickjrcrap/Screenshot_2023-10-07_220834.png)
 
 ### Make sure to check out [the full series](https://www.youtube.com/playlist?list=PLLETAMxb4wBIcBTFnpvy4bRMn361HQos_) too!
 
