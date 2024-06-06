@@ -18,3 +18,4 @@
 * [Prototype Silver Shield](wb-2020.mp4) (recreation)
 * [The Silver Shield](wb-2021.mp4) (regular variant)
 * [Reimagined Classic Shield](wb-2023.mp4) (regular variant, no fanfare)
+* [Reimagined Classic Shield](wb-2023-fanfare.mp4) (Cinemascope, with fanfare, from "Am I Ok?" (2024))
