@@ -9,8 +9,6 @@ Fanmade versions are also included.
 
 Each logo in each category is sorted chronologically by the film release year or the logo debut year.
 
-Nicknames for the logos came from pages on [Closing Logos Wiki](https://www.closinglogos.com/page/Main_Page).
-
 Logos are found through YouTube.
 
 ## Logo list
