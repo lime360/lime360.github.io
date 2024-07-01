@@ -1,15 +1,10 @@
-# Warner Bros. Logo Archive
-At the moment of making this, I was obsessed with that.
+# ![Warner Bros. Logo Archive](wbarchivecover.png)
+I had an obsession of Warner Bros. logos in the beginning of 2024, so I think that it would be great to
+make an archive of these logos.
 
-To Warner Bros. Discovery: this is made for archival pruposes so please don't sue me.
+The nicknames of the logos were taken from [AVID's old domain](https://www.closinglogos.com/page/Main_Page). The logos themselves were found on YouTube.
 
-## Information
-The archive mostly consists of opening and sometimes closing logos, and the film-specific variants.
-Fanmade versions are also included.
-
-Each logo in each category is sorted chronologically by the film release year or the logo debut year.
-
-Logos are found through YouTube.
+Logos are sorted chronologically.
 
 ## Logo list
 * [Warner Bros. Pictures](wb)
@@ -17,3 +12,6 @@ Logos are found through YouTube.
 * [Warner Bros. Television](wbtv)
 * [Warner Bros. Home Entertainment](warner-home-video)
 * [Closed Divisions](defunct)
+
+<hr>
+This archive is not affiliated with Warner Bros. Discovery.
